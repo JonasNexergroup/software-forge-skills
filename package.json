@@ -1,0 +1,15 @@
+{
+  "name": "software-forge-skills",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  }
+}

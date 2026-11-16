@@ -1,0 +1,30 @@
+# Skill folders to install. Paths are relative to this YAML file.
+# Add your own skill paths below, e.g. skills/my-skill.
+skills:
+  - upstream/mattpocock/skills/engineering/ask-matt
+  - upstream/mattpocock/skills/engineering/code-review
+  - upstream/mattpocock/skills/engineering/codebase-design
+  - upstream/mattpocock/skills/engineering/diagnosing-bugs
+  - upstream/mattpocock/skills/engineering/domain-modeling
+  - upstream/mattpocock/skills/engineering/grill-with-docs
+  - upstream/mattpocock/skills/engineering/implement
+  - upstream/mattpocock/skills/engineering/implement-spec
+  - upstream/mattpocock/skills/engineering/improve-codebase-architecture
+  - upstream/mattpocock/skills/engineering/pr
+  - upstream/mattpocock/skills/engineering/prototype
+  - upstream/mattpocock/skills/engineering/research
+  - upstream/mattpocock/skills/engineering/retro
+  - upstream/mattpocock/skills/engineering/setup-matt-pocock-skills
+  - upstream/mattpocock/skills/engineering/tdd
+  - upstream/mattpocock/skills/engineering/to-spec
+  - upstream/mattpocock/skills/engineering/to-tickets
+  - upstream/mattpocock/skills/engineering/triage
+  - upstream/mattpocock/skills/engineering/wayfinder
+  - upstream/mattpocock/skills/engineering/wizard
+  - upstream/mattpocock/skills/productivity/grill-me
+  - upstream/mattpocock/skills/productivity/grilling
+  - upstream/mattpocock/skills/productivity/handoff
+  - upstream/mattpocock/skills/productivity/teach
+  - upstream/mattpocock/skills/productivity/to-questionnaire
+  - upstream/mattpocock/skills/productivity/wait-what
+  - upstream/mattpocock/skills/productivity/writing-for-agents
