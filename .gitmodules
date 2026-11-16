@@ -1,0 +1,4 @@
+[submodule "upstream/mattpocock"]
+	path = upstream/mattpocock
+	url = https://github.com/mattpocock/skills.git
+	branch = main

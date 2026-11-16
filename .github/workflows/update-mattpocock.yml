@@ -1,0 +1,49 @@
+name: Update Matt Pocock skills
+
+on:
+  schedule:
+    # Daily at 07:00 UTC. Scheduled runs may be delayed by GitHub.
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-mattpocock
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository and pinned submodule
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          submodules: recursive
+
+      - name: Update submodule from upstream main
+        run: git submodule update --init --remote -- upstream/mattpocock
+
+      - name: Open or update pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          add-paths: upstream/mattpocock
+          commit-message: "Update Matt Pocock skills"
+          branch: automation/update-mattpocock
+          delete-branch: true
+          base: main
+          title: "Update Matt Pocock skills"
+          body: |
+            Updates the Matt Pocock skills submodule to the latest upstream `main` commit.
+
+            Review the submodule commit changes and test the selected engineering and productivity skills before merging.
+
+            After merging, run locally:
+            ```sh
+            git pull --ff-only
+            git submodule update --init --recursive
+            ```
